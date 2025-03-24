@@ -53,22 +53,23 @@ kotlin {
     iosX64()
     // Tier 2
     linuxX64()
+    linuxArm32Hfp()
     linuxArm64()
-    //watchosSimulatorArm64()
-    //watchosX64()
-    //watchosArm32()
-    //watchosArm64()
+    watchosSimulatorArm64()
+    watchosX64()
+    watchosArm32()
+    watchosArm64()
     tvosSimulatorArm64()
     tvosX64()
     tvosArm64()
     iosArm64()
     // Tier 3
-    //androidNativeArm32()
-    //androidNativeArm64()
-    //androidNativeX86()
-    //androidNativeX64()
+    androidNativeArm32()
+    androidNativeArm64()
+    androidNativeX86()
+    androidNativeX64()
     mingwX64()
-    //watchosDeviceArm64()
+//    watchosDeviceArm64()
 
     sourceSets {
         all {

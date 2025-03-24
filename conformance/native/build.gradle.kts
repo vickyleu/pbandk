@@ -7,11 +7,11 @@ plugins {
 
 kotlin {
     linuxX64()
-    if (DefaultNativePlatform.getCurrentOperatingSystem().isMacOsX && DefaultNativePlatform.getCurrentArchitecture().name == "aarch64") {
-        macosArm64()
-    } else {
-        macosX64()
-    }
+    macosArm64()
+    macosX64()
+    mingwX64("windows")
+    linuxArm32Hfp()
+    linuxArm64()
 
     targets.withType<KotlinNativeTarget> {
         binaries {
